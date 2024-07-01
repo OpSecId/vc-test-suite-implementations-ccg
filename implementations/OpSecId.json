@@ -1,0 +1,15 @@
+{
+    "name": "OpSecId",
+    "implementation": "OpSecId",
+    "verifiers": [{
+      "id": "https://vc.opsec.id",
+      "endpoint": "https://vc.opsec.id/credentials/verify",
+      "tags": ["vc-api"]
+    }],
+    "issuers": [{
+      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "endpoint": "https://vc.opsec.id/credentials/issue",
+      "tags": ["vc-api"]
+    }]
+  }
+  
