@@ -1,6 +1,6 @@
 {
-    "name": "OpSecId",
-    "implementation": "OpSecId",
+    "name": "Open Security and Identity",
+    "implementation": "Aca-py plugin",
     "verifiers": [{
       "id": "https://vc.opsec.id",
       "endpoint": "https://vc.opsec.id/credentials/verify",
