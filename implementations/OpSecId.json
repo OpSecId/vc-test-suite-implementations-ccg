@@ -1,15 +1,20 @@
 {
     "name": "Open Security and Identity",
-    "implementation": "Aca-py plugin",
-    "verifiers": [{
-      "id": "https://vc.opsec.id",
-      "endpoint": "https://vc.opsec.id/credentials/verify",
-      "tags": ["vc-api", "vc2.0"]
-    }],
+    "implementation": "aries-plugin",
     "issuers": [{
       "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
       "endpoint": "https://vc.opsec.id/credentials/issue",
-      "tags": ["vc-api", "vc2.0"]
+      "tags": ["vc2.0", "vc-api", "BitstringStatusList", "Revocation"]
+    }],
+    "verifiers": [{
+      "id": "https://vc.opsec.id",
+      "endpoint": "https://vc.opsec.id/credentials/verify",
+      "tags": ["vc2.0", "vc-api", "BitstringStatusList", "Revocation"]
+    }],
+    "vpVerifiers": [{
+      "id": "https://vc.opsec.id",
+      "endpoint": "https://vc.opsec.id/presentations/verify",
+      "tags": ["vc2.0"]
     }]
-  }
+}
   

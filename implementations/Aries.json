@@ -1,15 +1,20 @@
 {
-    "name": "Aries",
-    "implementation": "Aca-py",
-    "verifiers": [{
-      "id": "https://agent.opsec.id",
-      "endpoint": "https://agent.opsec.id/vc/credentials/verify",
-      "tags": ["vc-api", "vc2.0"]
-    }],
+    "name": "Aries Cloudagent Python",
+    "implementation": "aca-py",
     "issuers": [{
       "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
       "endpoint": "https://agent.opsec.id/vc/credentials/issue",
-      "tags": ["vc-api", "vc2.0"]
+      "tags": ["vc2.0", "vc-api"]
+    }],
+    "verifiers": [{
+      "id": "https://agent.opsec.id",
+      "endpoint": "https://agent.opsec.id/vc/credentials/verify",
+      "tags": ["vc2.0", "vc-api"]
+    }],
+    "vpVerifiers": [{
+      "id": "https://agent.opsec.id",
+      "endpoint": "https://agent.opsec.id/vc/presentations/verify",
+      "tags": ["vc2.0"]
     }]
   }
   
